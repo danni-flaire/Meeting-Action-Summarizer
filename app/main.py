@@ -49,9 +49,9 @@ async def extract_memo(payload: MeetingInput):
                 "content": f"Here is the meeting transcript:\n\n{raw_text}"
             }],
     temperature=0.6,
-    max_completion_tokens=2048,
+    max_completion_tokens= 4096,
     top_p=0.8,
-    reasoning_effort="high",
+    reasoning_effort="medium",
     stop=None,
     response_format={"type": "json_object"}
 )
