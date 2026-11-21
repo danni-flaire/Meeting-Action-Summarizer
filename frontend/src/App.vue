@@ -12,7 +12,7 @@ import {
 } from "lucide-vue-next";
 
 // Endpoint definition
-const ENDPOINT_URL = "meeting-action-summarizer-app.vercel.app/extract";
+const ENDPOINT_URL = "https://meeting-action-summarizer-app.vercel.app/extract";
 
 // Sample meeting transcripts for quick testing and demonstration
 const SAMPLE_TRANSCRIPTS = {
@@ -136,7 +136,7 @@ async function extractActionItems() {
       err instanceof TypeError &&
       err.message.toLowerCase().includes("fetch")
     ) {
-      errorMessage.value = `Unable to connect to backend at ${ENDPOINT_URL}. Ensure the FastAPI server is running with CORS enabled (e.g. uvicorn app.main:app --reload --port 8000).`;
+      errorMessage.value = `Unable to connect to backend at ${ENDPOINT_URL}. Ensure the service is reachable with CORS enabled.`;
     } else {
       errorMessage.value =
         err.message ||
@@ -493,7 +493,7 @@ async function copyAsJson() {
                         class="mt-4 pt-3 border-t border-neutral-200 flex items-center justify-between"
                       >
                         <span class="font-mono text-[11px] text-neutral-400">
-                          Verify FastAPI endpoint is listening at :8000
+                          Verify FastAPI endpoint is reachable
                         </span>
                         <button
                           type="button"
