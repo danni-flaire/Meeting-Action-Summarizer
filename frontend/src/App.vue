@@ -12,7 +12,7 @@ import {
 } from "lucide-vue-next";
 
 // Endpoint definition
-const ENDPOINT_URL = "http://localhost:8000/extract";
+const ENDPOINT_URL = "meeting-action-summarizer-app.vercel.app/extract";
 
 // Sample meeting transcripts for quick testing and demonstration
 const SAMPLE_TRANSCRIPTS = {
@@ -892,7 +892,7 @@ async function copyAsJson() {
 
         <div class="flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/danni-flaire/Meeting-Action-Summarizer"
             target="_blank"
             rel="noopener noreferrer"
             class="font-mono text-xs uppercase tracking-wider text-neutral-600 hover:text-black transition-colors"
