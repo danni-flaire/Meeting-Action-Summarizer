@@ -45,6 +45,7 @@ Modern product, engineering, and leadership teams produce hours of spoken dialog
 | ---------------------- | ------------------------------------------------------------------------------ |
 | **Inference Engine**   | Qwen (`qwen/qwen3.8-27b`) via Groq Cloud API                                   |
 | **Decoding Strategy**  | Strict JSON Mode (`response_format: {"type": "json_object"}`)                  |
+| **Token Limit**        | 2,048 max completion tokens (`max_completion_tokens: 2048`)                    |
 | **Validation Layer**   | Pydantic v2 Schema Enforcement (`MeetingInput`, `ActionItem`, `MeetingOutput`) |
 | **Backend Framework**  | FastAPI (Python 3.11+) asynchronous REST service                               |
 | **ASGI Server**        | Uvicorn with CORSMiddleware enabled                                            |

@@ -726,7 +726,7 @@ async function copyAsJson() {
                 Qwen (qwen/qwen3.8-27b) via Groq API
                 <span class="block font-mono text-xs text-[#52525B] mt-0.5">
                   Operates in Strict JSON Mode (`response_format: {"type":
-                  "json_object"}`) on Groq LPUs.
+                  "json_object"}`) on Groq LPUs with a 2,048 token limit (`max_completion_tokens: 2048`).
                 </span>
               </dd>
             </div>
